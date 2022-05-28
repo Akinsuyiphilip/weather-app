@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "montserrat", sans-serif;
+  
+  }
+  
+  .app{
+     background-image: url(./assests/cold-bg.jpg);
+     background-position: bottom;
+     background-size: cover;
+     transition: 0.4s ease-out;
+  }
+  .app.warm{
+      background-image: url(./assests/warm-bg.jpg);
+  }
+  
+  main{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+    padding:  3rem;
+
+    .searchbox{
+        width: 100%;
+        margin: 0 0 5rem;
+
+        .search-bar{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+
+            appearance: none;
+            background: none;
+            border: none;
+            outline: none;
+
+            background-color: rgba(255,255,255, 0.5);
+            border-radius: 0 0 1rem 1rem;
+            margin-top: -3rem;
+            box-shadow: 0 .2rem rgba( 0,0,0,0.2);
+            color: #313131;
+            font-size: 1.3rem;
+            transition: 0.3s ease;
+        }
+        .search-bar:focus{
+            background-color: rgba(255,255,255, 0.85);
+        }
+    }
+
+    .location-box{
+        .location{
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
+            text-shadow: 3px 3px rgba(50,50,70, 0.5);
+        }
+        .date{
+            color: #fff;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            text-align: center;
+            padding-top: .6rem;
+            text-shadow: 2px 2px rgba(50,50,70, 0.5);
+        }
+    }
+
+    .weather-box{
+        text-align: center;
+        padding-top: 1rem;
+        .temp{
+            position: relative;
+            display: inline-block;
+            margin: 30px auto;
+            background-color: rgba(255,255,255, 0.2);
+            border-radius: 16px;
+            padding: 15px 20px;
+
+            font-size: 102px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            box-shadow: 3px 6px rgba(0,0,0,0.2);
+        }
+    }
+
+    .weather{
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+        text-shadow: rgba(50,50,70, 0.5);
+
+    }
+
+    footer{
+        color: #fff;
+        text-align: center;
+        display: block;
+    }
+  } 
