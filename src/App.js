@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 
+
 const api ={
 key: "196229dd292491da900f868546e4beaa",
 base:"https://api.openweathermap.org/data/2.5/"
@@ -36,6 +37,13 @@ let year = d.getFullYear();
 return `${day} ${date} ${month} ${year}`
 }
   return (
+
+    <>
+    <nav className='navbar'>
+        <h1 className="navbarword"> <span>P</span>hilip</h1>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </nav>
+
   <div className={(typeof weather.main != "undefined")
   ? ((weather.main.temp > 16)
     ? 
@@ -72,6 +80,7 @@ return `${day} ${date} ${month} ${year}`
   </main>
 
   </div>
+  </>
 );
 }
 
