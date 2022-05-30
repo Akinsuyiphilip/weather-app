@@ -1,45 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body{
-    font-family: "montserrat", sans-serif;
-  
-  }
-  
-  .app{
-     background-image: url(./assests/cold-bg.jpg);
-     background-position: bottom;
-     background-size: cover;
-     transition: 0.4s ease-out;
-  }
-  .app.warm{
-      background-image: url(./assests/warm-bg.jpg);
-  }
-  
-  .navbar{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(62, 222, 228, 0.884);
-      overflow: hidden;
-      position: fixed; 
-      top: 0; 
-      width: 100%; 
-      padding: 1rem;
-  }
-  main{
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
-    padding:  3rem;
+}
 
-    .searchbox{
+body {
+    font-family: "montserrat", sans-serif;
+
+}
+
+.app {
+    background-image: url(./assests/cold-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    transition: 0.4s ease-out;
+}
+
+.app.warm {
+    background-image: url(./assests/warm-bg.jpg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.801);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0 0 2rem 2rem;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        width: 60vw;
+        justify-content: end;
+        margin-right: 2rem;
+
+        a {
+            color: rgba(0, 0, 0, 0.295);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0.5rem 1rem 0.3rem;
+            height: 100%;
+            i{
+                color: black;
+            }
+        }
+
+    }
+
+
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgb(8, 152, 235);
+        text-shadow: 1.5px 2px rgba(50, 50, 70, 0.5);
+
+        span {
+            font-size: 2rem;
+        }
+    }
+
+}
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+    padding: 3rem;
+
+    .searchbox {
         width: 100%;
         margin: 0 0 5rem;
 
-        .search-bar{
+        .search-bar {
             display: block;
             width: 100%;
             padding: 1rem;
@@ -49,46 +90,49 @@
             border: none;
             outline: none;
 
-            background-color: rgba(255,255,255, 0.5);
+            background-color: rgba(255, 255, 255, 0.5);
             border-radius: 1rem;
             margin-top: 4rem;
-            box-shadow: 0 .2rem rgba( 0,0,0,0.2);
+            box-shadow: 0 .2rem rgba(0, 0, 0, 0.2);
             color: #313131;
             font-size: 1.3rem;
             transition: 0.3s ease;
         }
-        .search-bar:focus{
-            background-color: rgba(255,255,255, 0.85);
+
+        .search-bar:focus {
+            background-color: rgba(255, 255, 255, 0.85);
         }
     }
 
-    .location-box{
-        .location{
+    .location-box {
+        .location {
             color: #fff;
             font-size: 32px;
             font-weight: 500;
             text-align: center;
-            text-shadow: 3px 3px rgba(50,50,70, 0.5);
+            text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
         }
-        .date{
+
+        .date {
             color: #fff;
             font-size: 15px;
             font-weight: 300;
             font-style: italic;
             text-align: center;
             padding-top: .6rem;
-            text-shadow: 2px 2px rgba(50,50,70, 0.5);
+            text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
         }
     }
 
-    .weather-box{
+    .weather-box {
         text-align: center;
         padding-top: 1rem;
-        .temp{
+
+        .temp {
             position: relative;
             display: inline-block;
             margin: 30px auto;
-            background-color: rgba(255,255,255, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             padding: 15px 20px;
 
@@ -96,21 +140,80 @@
             font-weight: 600;
             color: #fff;
             text-align: center;
-            box-shadow: 3px 6px rgba(0,0,0,0.2);
+            box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
         }
     }
 
-    .weather{
+    .weather {
         color: #fff;
         font-size: 48px;
         font-weight: 700;
-        text-shadow: rgba(50,50,70, 0.5);
+        text-shadow: rgba(50, 50, 70, 0.5);
 
     }
 
-    footer{
+    footer {
         color: #fff;
         text-align: center;
         display: block;
     }
-  } 
+}
+
+@media screen and (max-width: 960px) {
+
+
+    .navbar {
+    
+
+        .menu-icon {
+            display: flex !important;
+        }
+
+        .nav-menu {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: 20vh !important;
+            position: absolute !important;
+            top: 4.2rem !important;
+            left: -100% !important;
+            opacity: 1;
+            transition: all 0.5s ease !important;
+            justify-content: space-around !important;
+            text-align: center !important;
+            margin-left: 0 !important;
+            z-index: 1;
+            padding-top: 2rem;
+        }
+
+        .nav-menu.active {
+            background: rgba($color: #10afd6, $alpha: 1.0);
+            left: 0 !important;
+            opacity: 2;
+            transition: all 0.5s ease;
+        }
+
+        a {
+            text-align: center !important;
+            margin: 0 !important;
+            padding: 1rem !important;
+            width: 100% !important;
+            height: 70% !important;
+            display: table !important;
+           
+        }
+
+        a:hover {
+            text-align: center !important;
+            background-color: transparent !important;
+            color: #fff !important;
+            border-radius: 0;
+            border: 0.1rem solid blue !important;
+            transition: all 0.2s ease-out;
+         
+             i{
+                 color: rgba(0, 0, 0, 0.637);
+             }
+        }
+    }
+}
