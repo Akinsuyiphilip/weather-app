@@ -70,6 +70,7 @@ body {
 }
 
 .navbar .nav-menu a i {
+  padding-left: .5rem;
   color: black;
 }
 
@@ -187,7 +188,7 @@ main footer {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     width: 100% !important;
-    height: 20vh !important;
+    height: 540px !important;
     position: absolute !important;
     top: 4.2rem !important;
     left: -100% !important;
@@ -207,6 +208,7 @@ main footer {
     opacity: 2;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    text-align: center;
   }
   .navbar a {
     text-align: center !important;
