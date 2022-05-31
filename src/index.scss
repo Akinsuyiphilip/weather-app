@@ -174,17 +174,17 @@ main {
             display: flex !important;
             flex-direction: column !important;
             width: 100% !important;
-            height: 30rem !important;
+            height: 20rem !important;
             position: absolute !important;
-            top: 3.7rem !important;
+            top: 3rem !important;
             left: -100% !important;
             opacity: 1;
             transition: all 0.5s ease !important;
-            justify-content: space-around !important;
+            justify-content: space-between !important;
             text-align: center !important;
             margin-left: 0 !important;
             z-index: 1;
-            padding-top: 1rem;
+            padding: 2rem 0 1rem;
         }
 
         .nav-menu.active {
