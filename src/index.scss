@@ -174,7 +174,7 @@ main {
             display: flex !important;
             flex-direction: column !important;
             width: 100% !important;
-            height: 25rem !important;
+            height: auto !important;
             position: absolute !important;
             top: 3rem !important;
             left: -100% !important;
@@ -188,7 +188,7 @@ main {
         }
 
         .nav-menu.active {
-            background: rgba($color: #10afd6, $alpha: 1.0);
+            background-color: rgba($color: #10afd6, $alpha: 1.0);
             left: 0 !important;
             opacity: 2;
             transition: all 0.5s ease;

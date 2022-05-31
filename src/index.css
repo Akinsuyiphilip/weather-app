@@ -188,7 +188,7 @@ main footer {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     width: 100% !important;
-    height: 25rem !important;
+    height: auto !important;
     position: absolute !important;
     top: 3rem !important;
     left: -100% !important;
@@ -204,7 +204,7 @@ main footer {
     padding: 1rem 0 1rem;
   }
   .navbar .nav-menu.active {
-    background: #10afd6;
+    background-color: #10afd6;
     left: 0 !important;
     opacity: 2;
     -webkit-transition: all 0.5s ease;
