@@ -174,9 +174,9 @@ main {
             display: flex !important;
             flex-direction: column !important;
             width: 100% !important;
-            height: 540px !important;
+            height: 20vh !important;
             position: absolute !important;
-            top: 4.2rem !important;
+            top: 3.7rem !important;
             left: -100% !important;
             opacity: 1;
             transition: all 0.5s ease !important;
@@ -184,7 +184,7 @@ main {
             text-align: center !important;
             margin-left: 0 !important;
             z-index: 1;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
         }
 
         .nav-menu.active {
@@ -200,7 +200,7 @@ main {
             margin: 0 !important;
             padding: 1rem !important;
             width: 100% !important;
-            height: 70% !important;
+            height: 10% !important;
             display: table !important;
            
         }
