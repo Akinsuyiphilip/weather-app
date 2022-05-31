@@ -188,7 +188,7 @@ main footer {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     width: 100% !important;
-    height: 20vh !important;
+    height: 30rem !important;
     position: absolute !important;
     top: 3.7rem !important;
     left: -100% !important;
